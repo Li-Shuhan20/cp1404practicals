@@ -13,11 +13,12 @@ def question_2():
 
 
 def question_3():
+    total = 0
     with open("numbers.txt", "r") as file:
-        first_number = int(file.readline().strip())
-        second_number = int(file.readline().strip())
-    result = first_number + second_number
-    print(result)
+        for i in range(0, 2):
+            number = file.readline()
+            total += int(number)
+        print(total)
     file.close()
 
 
