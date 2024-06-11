@@ -26,9 +26,8 @@ def question_4():
     total = 0
     with open("numbers.txt", "r") as file:
         lines = file.readlines()
-        for line in lines:
-            number = int(line.strip())
-            total += number
+        for number in lines:
+            total += int(number)
     print(total)
     file.close()
 
